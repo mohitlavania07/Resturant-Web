@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" type="image" href="/image/54-546030_food-top-view-png-jpg-black-and-white.png">
+    <title>Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .image img {
+            width: 100%;
+            height: 750px;
+            object-fit: cover;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .text {
+            position: absolute;
+            border: 2px solid white;
+            height: 400px;
+            top: 20%;
+            left: 56%;
+            width: 300px;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(229, 234, 235);
+            border-radius: 10px;
+        }
+
+        .text ul {
+            margin: 12px;
+            padding: 7px;
+            text-align: center;
+        }
+
+        .text ul li {
+            margin: 12px;
+            font-size: 30px;
+            list-style: none;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .text h3 {
+            font-size: 40px;
+        }
+
+        .text2 {
+            position: absolute;
+            border: 2px solid white;
+            height: 400px;
+            top: 20%;
+            right: 3%;
+            width: 300px;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(221, 179, 121);
+            border-radius: 10px;
+        }
+
+        .text2 ul {
+            margin: 12px;
+            padding: 7px;
+            text-align: center;
+        }
+
+        .text2 ul li {
+            margin: 12px;
+            font-size: 30px;
+            list-style: none;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .text2 h3 {
+            font-size: 40px;
+        }
+
+        .heading {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+
+        }
+
+        .heading h1 {
+            font-size: 70px;
+            color: aliceblue;
+        }
+
+        .heading h2 {
+            font-size: 80px;
+            color: rgb(10, 10, 10);
+        }
+
+        .heading h3 {
+            font-size: 30px;
+            color: aliceblue;
+            position: absolute;
+            left: 45%;
+        }
+
+        section nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            right: 0;
+            left: 0;
+            background: white;
+            filter: drop-shadow(5px 5px 8px rgb(53, 52, 52));
+            z-index: 1000;
+            background-image: linear-gradient(rgb(41, 76, 112), rgb(161, 243, 243));
+        }
+
+        section nav .logo img {
+            width: 65px;
+            cursor: pointer;
+            margin: 7px 0;
+            border-radius: 50px;
+        }
+
+        section nav ul {
+            list-style: none;
+        }
+
+        section nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        section nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 20px;
+            transition: 0.2s;
+        }
+
+        section nav ul li a::after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background: rgb(23, 3, 74);
+            display: block;
+            transition: 0.2s linear;
+        }
+
+        section nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        section nav ul li a:hover {
+            color: white;
+        }
+
+        section nav .icon i {
+            font-size: 18px;
+            color: black;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .card {
+            width: 60%;
+            height: 300px;
+            display: flex;
+            gap: 5px;
+            position: absolute;
+            left: 33%;
+        }
+
+        .card img {
+            width: 10%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all ease 0.3s;
+            cursor: pointer;
+        }
+
+        .card img:hover {
+            width: 100%;
+        }
+
+        .card_header h1 {
+            text-align: center;
+            font-size: 45px;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="/image/restaurant-logo-design-template_79169-56.webp" alt="" />
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Order">Order</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+
+        <div class="image">
+            <img src="/image/food.jpg" alt="">
+        </div>
+        <div class="heading">
+            <h1>A Sizzling</h1>
+            <h2> Restaurant Website</h2>
+            <h3>Complete Details</h3>
+        </div>
+        <div class="text">
+            <ul>
+                <h3>Fast Foods </h3>
+                <li>Burger</li>
+                <li>Mommos</li>
+                <li>Pizza</li>
+                <li>Spring Rolls</li>
+                <li>Sandwich</li>
+                <li>Chilli Patato</li>
+            </ul>
+        </div>
+        <div class="text2">
+
+            <ul>
+                <h3>Indian Foods</h3>
+                <li>Chole Bhature</li>
+                <li>Thali</li>
+                <li>Samosa</li>
+                <li>Pav Bhaji</li>
+                <li>Jalebi</li>
+                <li>Parathe</li>
+            </ul>
+        </div>
+        <div class="card_header">
+            <h1><span>Indian</span>Taste</h1>
+        </div>
+        <div class="card">
+            <!-- <p>Explore the rich flavors of India in our mouth watering dishes -->
+            <img src="/image/IMG_20220904_210330-healthyfoodcare.co-dot-in-min-1024x960.webp" alt="">
+            <img src="/image/depositphotos_301181378-stock-photo-assorted-indian-food-on-black.jpg" alt="">
+            <img src="/image/IndianStreetFood_20190103000803.jpg" alt="">
+            <img src="/image/spicyfoodint-medium-size.jpg" alt="">
+            <img src="./image/1dfb363b3e2b9a006df28ab17bc82346.jpg" alt="">
+        </div>
+
+</body>
+
+</html>
